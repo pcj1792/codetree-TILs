@@ -6,7 +6,7 @@ int main() {
     cin >> a >> b;
     if (a<=b){
         cout << b-a;    
-        if (a>=b){
+        if (a>b){
             cout << a-b;
         }
     }
