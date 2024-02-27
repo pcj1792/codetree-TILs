@@ -4,25 +4,15 @@ using namespace std;
 int main() {
     int a ;
     cin >> a;
-    if(a%2==0) {
+
+    if(a%2==0) 
         a=a/2;
     
-        if(a%2!=0) {
-            a=(a+1)/2;
-            cout << a;
-        }
-        
-    }
-    else if(a%2!=0) {
+    if(a%2!=0) 
         a=(a+1)/2;
+    
+    cout << a;
 
-        if(a%2==0) {
-            a=a/2;
-            cout << a;
-        }
-        else cout << a;
-        
-    }
-    // 여기에 코드를 작성해주세요.
+    
     return 0;
 }
