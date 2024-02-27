@@ -6,7 +6,7 @@ int main() {
     if(a>b){
         cout << a*b;
     }
-    else cout << b%a ;
+    else cout << b/a ;
     // 여기에 코드를 작성해주세요.
     return 0;
 }
