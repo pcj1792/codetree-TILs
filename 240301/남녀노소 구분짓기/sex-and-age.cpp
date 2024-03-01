@@ -8,13 +8,13 @@ int main() {
         if(a>=19){
             cout << "MAN";
         }
-        else cout << "WOMAN";
+        else cout << "BOY";
     }
-    else if(s==0){
+    else if(s==1){
         if(a<19){
-            cout <<"BOY";
+            cout <<"GIRL";
         }
-        else cout << "GIRL";
+        else cout << "WOMAN";
     } 
     return 0;
 }
