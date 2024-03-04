@@ -3,24 +3,14 @@ using namespace std;
 int main() {
     int a,b,c;
     cin >> a >> b >>c;
-    if(a>=b){
-        if(a>=c){
-            if(b>=c){
-                cout << c;
-            }
-            else cout << b;
-        }
-        else cout << a;
-        
-    }
-    else if(a<=b){
-        if(a>=c){
-            cout << a;
-        }
-        else if(c>=a){
-            if(b>=c) cout << c;
-            else cout << b;
-        }
+    if ((a >= b && a <= c) || (a >= c && a <= b)) {
+        cout << a;
+    } 
+    else if ((b >= a && b <= c) || (b >= c && b <= a)) {
+        cout << b;
+    } 
+    else {
+        cout << c;
     }
 
     return 0;
