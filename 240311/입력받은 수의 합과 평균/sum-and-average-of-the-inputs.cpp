@@ -10,6 +10,7 @@ int main() {
         cnt++;
         avg=(double)sum/cnt;
     }
-    cout << sum<<" "<<avg ;
+    cout.precision(1);
+    cout << fixed << sum <<" "<<avg ;
     return 0;
 }
