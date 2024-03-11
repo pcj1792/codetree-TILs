@@ -1,11 +1,12 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main() {
-    int a,b,m;
+    int a,b,m=1;
+
     cin >> a >> b;
-    for(int i = a; i<=b; i++){
-        m=pow(a,b);
+
+    for(int i = 1; i<=b; i++){
+        m*=a;   
     }
     cout << m;
     return 0;
