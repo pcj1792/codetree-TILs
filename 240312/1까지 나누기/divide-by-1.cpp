@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n, cnt=0;
+    int n, cnt=1;
     cin >> n;
     for(int i =1; i<=n; i++){
         cnt++;
-        int a=n/=i;
+        n/=i;
         
-        if(a<=1) {
-            
+        if(n/i<=1) {
             break;
         }
     }
-    cnt++;
     cout << cnt;
     return 0;
 }
