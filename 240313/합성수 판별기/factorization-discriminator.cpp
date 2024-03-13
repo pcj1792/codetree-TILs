@@ -9,7 +9,7 @@ int main() {
             a=true;    
         }
     }
-    if(a=true) cout << 'C';
+    if(a==true) cout << 'C';
     else cout << 'N';
     return 0;
 }
