@@ -9,9 +9,9 @@ int main() {
         cin >> n;
     }
     for(int i=1; i<=100; i++){
-        if(i%n==0) s=false;
+        if(i%3!=0) s=false;
     }
-    if(s=true) cout << 1;
+    if(s==true) cout << 1;
     else cout << 0;
     return 0;
 }
