@@ -7,11 +7,14 @@ int main() {
 
     for(int i=1; i<=5; i++){
         cin >> n;
+        if(n%3!=0) {
+            s=false;
+        }
     }
-    for(int i=1; i<=100; i++){
-        if(i%3!=0) s=false;
+    if(s==true) {
+        cout << 1;
     }
-    if(s==true) cout << 1;
-    else cout << 0;
+    else 
+        cout << 0;
     return 0;
 }
