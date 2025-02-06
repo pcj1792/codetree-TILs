@@ -8,10 +8,10 @@ for i in range(n):
         print("*", end=" ")
     print()
     
-for j in range(n-1):
-    for _ in range(n-2*j):
-        print(" ", end="")
+for j in range(1,n):
+    for _ in range(n-1-j):
+        print(" ", end=" ")
 
-    for _ in range(2*j+3):
+    for _ in range(2*j+1):
         print("*", end=" ")
     print()
