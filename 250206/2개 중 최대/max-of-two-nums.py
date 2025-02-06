@@ -1,10 +1,4 @@
 a, b = map(int, input().split())
 
-if a < b:
-    print(b)
-
-elif a > b:
-    print(a)
-
-else:
-    pass
+c = a if a > b else b
+print(c)
