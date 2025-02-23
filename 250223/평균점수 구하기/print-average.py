@@ -5,4 +5,4 @@ for i in point:
     sum += i
     avr = sum / int(len(point))
 
-print(avr)
+print(f'{avr:.1f}')
