@@ -9,5 +9,8 @@ for i in arr:
         else:
             new_arr.append(i//2)
 
+    else:
+        break        
+
 for i in new_arr:
     print(i, end=" ")
