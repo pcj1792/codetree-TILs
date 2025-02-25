@@ -1,6 +1,13 @@
 nums = list(map(int,input().split()))
+sum3 = 0
+cnt = 0
 
-ood_sum = sum(nums[1::2])
-multi_avr = sum([x for x in nums if x % 3 == 0]) / 3
+sum2 = sum(nums[1::2])
+for i in range(10):
+    if (i+1) % 3 == 0:
+        sum3 += nums[i]
+        cnt += 1
 
-print(ood_sum,f'{multi_avr:.1f}', sep=" ")
+avr3 = sum3 /cnt
+
+print(sum2,f'{avr3:.1f}', sep=" ")
